@@ -6,7 +6,7 @@ In general, areas with large population and low number of charging stations have
 
 ---
 
-Final result can be seen here: https://berlingeoheatmap1-9ks628b6jdc4vfuzdtyrwn.streamlit.app/
+Final result can be seen here: https://berlin-charging-station-mapping.streamlit.app/
 
 These are the Tasks:
 1) Load the correct data from the websites in the links. As the websites are in German, use translators (Browser, AI, etc.) 
