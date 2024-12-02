@@ -4,14 +4,7 @@ Electric mobility is essential in order to reduce emission of green house gases.
 
 In general, areas with large population and low number of charging stations have demand for more of them. Furthermore large number of one-family-houses reduces demand, because owners of electric car install charger on their private property. However reliable and free data about ratios of housing types is not or only partly available. Therefore only population numbers and numbers of charging stations will be considered:
 
-# Ladesäuleninfrastruktur je PLZ
-https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/E-Mobilitaet/start.html
-# Liste der Ladesäulen (xlsx / 8 MB)
-# Liste der Ladesäulen (CSV) (csv / 11 MB)
-
-# Bevölkerungsgröße je PLZ
-https://www.suche-postleitzahl.org/downloads
-# plz_einwohner.csv
+---
 
 Final result can be seen here: https://berlingeoheatmap1-9ks628b6jdc4vfuzdtyrwn.streamlit.app/
 
@@ -33,3 +26,30 @@ These are the Tasks:
 10) Additional task (not evaluated): Check data quality of both source files.
 	Requirements: What are necessary columns? Which Formats, value ranges, distributions etc. are plausible?
 	Write Python code that checks data Quality automatically
+
+---
+
+### Evaluation
+
+Our group thought that the central districts of Berlin, such as Mitte, Friedrichshain, and Kreuzberg, have the highest density of residents based on the "Residents" heatmap. This suggests that these areas are likely to have a very high demand for electric vehicle charging infrastructure. The high population density in these districts means a greater concentration of potential EV users who would require accessible charging facilities.
+
+Additionally, other inner districts, including Neukölln, Charlottenburg-Wilmersdorf, and Tempelhof-Schöneberg, also show significant resident populations. However, based on the "Charging Stations" heatmap, these areas appear to lack sufficient coverage of charging stations. This mismatch between resident density and infrastructure coverage highlights these districts as key priority areas for the addition of new charging stations.
+
+Furthermore, we thought that in outer districts such as Spandau, Reinickendorf, and Marzahn-Hellersdorf, although the population density is lower, the current number of charging stations seems inadequate for the geographical size and spread of these areas. These districts may require additional stations to ensure equitable access, particularly for suburban EV users.
+
+Districts like Treptow-Köpenick and Lichtenberg, while having lower population densities, still need a basic number of charging stations to support commuters and residents with electric vehicles.
+
+Evaluating the potential demand in charging stations, we would add the following amounts per district:
+
+| **District**               | **Suggested Additions** | **Reason**                              |
+|----------------------------|-------------------------|------------------------------------------|
+| Mitte                     | 15–20                  | High population, moderate coverage.     |
+| Friedrichshain-Kreuzberg  | 15–20                  | High population, moderate coverage.     |
+| Neukölln                  | 10–15                  | Growing EV demand.                      |
+| Charlottenburg-Wilmersdorf| 10–12                  | Moderate density, more infrastructure.  |
+| Tempelhof-Schöneberg      | 8–10                   | Moderate density.                       |
+| Spandau                   | 5–7                    | Suburban EV users.                      |
+| Reinickendorf             | 5                      | Moderate suburban population.           |
+| Marzahn-Hellersdorf       | 5                      | Low population density, still needed.   |
+| Treptow-Köpenick          | 3–5                    | Coverage for commuters.                 |
+| Lichtenberg               | 3–5                    | Basic coverage for low demand.          |
